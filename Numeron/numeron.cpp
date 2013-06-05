@@ -213,6 +213,8 @@ int main(){
 			turn=!turn;
 		}while(sample.eat!=3);
 		cout<<"<<<END>>> : count="<< computer.getCount()<<endl;
+		cout<<"computer's number is"<<computer.getAns()<<endl; 
+		cout<<"player's number is"<<player.getAns()<<endl; 
 		cout<<"if you want to finish, input '0'."<<endl;
 		cin>>ans;
 	}while(ans!=0);
