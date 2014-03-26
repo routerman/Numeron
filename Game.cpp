@@ -51,6 +51,9 @@ void Game::Proc(){
 	} while (true);
 }
 
+
+
+
 //
 Game::Game(int mode){
 	turn = false;
