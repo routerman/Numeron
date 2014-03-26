@@ -43,6 +43,5 @@ int main(){
 		if (command[0] != 'y')break;
 	} while (true);
 	
-	delete game;
 	return 0;
 }

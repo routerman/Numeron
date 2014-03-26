@@ -2,8 +2,10 @@
 #include <string>
 #include <fstream>
 #include <list>
+#include <vector>
 #include <map>
 
+#include <stdexcept>
 #include <cstdlib>
 #include <ctime>
 #include <functional>

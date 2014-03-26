@@ -16,6 +16,8 @@ public:
 	
 	//新たに追加する関数
 	void noway(int query, int reply);
+	int isEffective(int query);
+	int vnoway(int query, int reply);
 
 	//コンストラクタ
 	Machine(bool turn) : Player(turn){
