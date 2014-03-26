@@ -1,9 +1,8 @@
-Numeron
+What is Numeron?
 =======
 
 This is CUI number game called "Numeron".
 
-=======
 Rule
 =======
 
@@ -17,7 +16,7 @@ Player B has to compare with secreat number and answer like " 1 EAT and 2 BITE".
 EAT means how many numbers which macth the value and place.
 BITE means how many numbers which macth the value, but don't match the place.
 
-#For example, in this case, Player A can know that Player B's number must be "039" or "390" or "903".
+For example, in this case, Player A can know that Player B's number must be "039" or "390" or "903".
 
 Next, Player B also guesses Player A's number and call "254?".
 And Player A says " 1 EAT and 0 BITE".
@@ -29,7 +28,6 @@ Then, Player A get win!
 The Player who mache the all answer first get win.
 
 
-=======
 How to play
 =======
 
