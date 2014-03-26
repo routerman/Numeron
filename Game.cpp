@@ -11,7 +11,7 @@ void Game::Proc(){
 
 		//ゲーム開始
 		while (!end){
-			//sleep(1);
+			sleep(1);
 			cout << endl << "<<--- " << player[turn]->getName() << "'s turn!! (" << this->count << ") --->>" << endl;
 			//3回続けて無効な質問を送信したら負け
 			try_count = 0;
@@ -26,7 +26,7 @@ void Game::Proc(){
 
 			//有効な質問に対し、返事をする。
 			rep = player[!turn]->SendReply(que);
-			//sleep(1);
+			sleep(1);
 
 			//3-0の場合は終了する
 			if (rep == 30){

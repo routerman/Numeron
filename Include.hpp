@@ -7,7 +7,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <functional>
-//#include <unistd.h> //sleep()
+
+#ifdef __linux__
+   //sleep()
+   #include <unistd.h>
+#endif
 
 using namespace std;
 

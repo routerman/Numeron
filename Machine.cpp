@@ -26,7 +26,13 @@ int Machine::SendQuery(){
 	ShowQueryHistory();
 	//‚Æ‚è‚ ‚¦‚¸AŒó•â”‚ÌÅ‰
 	list<int>::iterator it = numbers_list.begin();
-	cout << name << " >> nokori..." << numbers_list.size() << " numbers, I guess your number is .." << *it << endl;
+	cout << name << " >> There are..." << numbers_list.size() << " numbers, I guess your number is .";
+   sleep(1);
+	cout << ".";
+   sleep(1);
+	cout << ".";
+   sleep(1);
+	cout << *it << endl;
 	return *it;
 
 }
