@@ -13,17 +13,14 @@ Rule
   Player A guesses Player B's number and call like "093".
   Player B has to compare with secreat number and answer like " 1 EAT and 2 BITE".
   
-  - EAT means how many numbers which macth the value and place.
-  - BITE means how many numbers which macth the value, but don't match the place.
+- EAT means how many numbers which macth the value and place.
+- BITE means how many numbers which macth the value, but don't match the place.
   
   For example, in this case, Player A can know that Player B's number must be "039" or "390" or "903".
   Next, Player B also guesses Player A's number and call "254?"
-  
   And Player A says " 1 EAT and 0 BITE".
-  
   Next, Player A call "903?"
   Player B answer "3 EAT and 0 BITE"
-  
   Then, Player A get win!
   The Player who mache the all answer first get win.
   
