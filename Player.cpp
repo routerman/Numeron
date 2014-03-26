@@ -19,7 +19,11 @@ int Player::SendReply(int query){
 //質問の履歴を表示する。オーバーライドする必要はない
 void Player::ShowQueryHistory(){
 	int i = 0;
-	for (map<int, int>::iterator it = query_reply_map.begin(); it != query_reply_map.end(); it++){
-		cout << ++i << ":" << (*it).first << ":" << (*it).second / 10 << "-" << (*it).second % 10 << endl;
-	}
+	//for (map<int, int>::iterator it = query_reply_map.begin(); it != query_reply_map.end(); it++){
+	//	cout << ++i << ":" << (*it).first << ":" << (*it).second / 10 << "-" << (*it).second % 10 << endl;
+	//}
+   for( list<QueryReply>::iterator it = query_reply_list.begin(); it != query_reply_list.end(); it++ ){
+		cout << ++i << ":";
+      it->show();
+   }
 }

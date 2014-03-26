@@ -3,7 +3,7 @@
 #include <fstream>
 #include <list>
 #include <vector>
-#include <map>
+//#include <map>
 
 #include <stdexcept>
 #include <cstdlib>
@@ -17,7 +17,7 @@
 
 using namespace std;
 
-#define DEBUG
+//#define DEBUG
 
 /*
 typedef struct{

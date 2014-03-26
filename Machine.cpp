@@ -104,7 +104,9 @@ int Machine::vnoway(int query, int reply){
 
 //結果を受けとり候補を削除する
 void Machine::ResvQuery(int query, int reply){
-	query_reply_map.insert( map<int, int>::value_type(query, reply) );
+	//query_reply_map.insert( map<int, int>::value_type(query, reply) );
+   QueryReply a(query,reply);
+	query_reply_list.push_back(a);	//質問とその答えを履歴に追加する
 	//numbers_list.remove_if(noway(query,reply/10,reply%10));
 	noway(query, reply);
 }
@@ -112,7 +114,8 @@ void Machine::ResvQuery(int query, int reply){
 //マイナンバーや候補数リストを初期化する
 void Machine::Init(){
 	number = 0;
-	query_reply_map.clear();
+	//query_reply_map.clear();
+	query_reply_list.clear();
 	numbers_list.clear();
 	for (int i = 0; i < 1000; i++){
 		if (isValidNumber(i) == true){

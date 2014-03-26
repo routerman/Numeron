@@ -2,11 +2,14 @@
 
 
 void Human::ResvQuery(int query, int reply){
-	query_reply_map.insert(map<int, int>::value_type(query, reply));	//¿–â‚Æ‚»‚Ì“š‚¦‚ğ—š—ğ‚É’Ç‰Á‚·‚é
+	//query_reply_map.insert(map<int, int>::value_type(query, reply));	//¿–â‚Æ‚»‚Ì“š‚¦‚ğ—š—ğ‚É’Ç‰Á‚·‚é
+   QueryReply a(query,reply);
+	query_reply_list.push_back(a);	//¿–â‚Æ‚»‚Ì“š‚¦‚ğ—š—ğ‚É’Ç‰Á‚·‚é
 }
 
 void Human::Init(){
-	query_reply_map.clear();	//¿–â‚Ì—š—ğ‚ğíœ
+	//query_reply_map.clear();	//¿–â‚Ì—š—ğ‚ğíœ
+	query_reply_list.clear();	//¿–â‚Ì—š—ğ‚ğíœ
 	SelectMyNumber();	//©•ª‚Ì”š‚ğŒˆ‚ß‚é
 }
 

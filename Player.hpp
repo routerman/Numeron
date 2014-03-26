@@ -9,9 +9,17 @@
 HumanとMachineの基底クラスで、「プレイヤー」として必要な機能を持つ。
 また、純仮想関数があるため、抽象クラスでもある。
 */
-struct QueryReply{
+class QueryReply{
    int query;
    int reply;
+public:
+   void show(){
+		cout << this->query << ":" << this->reply / 10 << "-" << this->reply % 10 << endl;
+   }
+   QueryReply(int query, int reply){
+      this->query = query;
+      this->reply = reply;
+   }
 };
 
 class Player{
@@ -19,8 +27,8 @@ protected:
 	//子クラスで使う変数のアクセス修飾子はprivateではなくprotected
 	bool turn;	//自分のターン
 	int number;	//自分の数字
-	map<int, int> query_reply_map;	//質問と返事の履歴
-	//vector<QueryReply> query_reply_list;	//質問と返事の履歴
+	//map<int, int> query_reply_map;	//質問と返事の履歴
+	list<QueryReply> query_reply_list;	//質問と返事の履歴
 	string name;	//名前
 public:
 
