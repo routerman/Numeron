@@ -33,12 +33,12 @@ How to play
 
 ::
 
-$ git clone http://github.com/routerman/Numeron 
-$ cd Numeron 
-$ make 
-$ ./numeron 
-1:   HUMAN vs HUMAN 
-2:   HUMAN vs COMPUTER 
-3:COMPUTER vs HUMAN 
-4:COMPUTER vs COMPUTER 
-Sir, Please, select GAME MODE >>2 [Enter] 
+ $ git clone http://github.com/routerman/Numeron 
+ $ cd Numeron 
+ $ make 
+ $ ./numeron 
+ 1:   HUMAN vs HUMAN 
+ 2:   HUMAN vs COMPUTER 
+ 3:COMPUTER vs HUMAN 
+ 4:COMPUTER vs COMPUTER 
+ Sir, Please, select GAME MODE >>2 [Enter] 
